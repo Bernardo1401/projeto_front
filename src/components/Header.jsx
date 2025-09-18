@@ -18,8 +18,8 @@ export default function Header() {
         </div>
         <nav className={styles.nav}>
           <ul className={styles.navList}>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#fighters">Lutadores</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/lutadores">Lutadores</a></li>
             <li><a href="#events">Eventos</a></li>
             <li><a href="#rankings">Rankings</a></li>
             <li><a href="#news">Notícias</a></li>

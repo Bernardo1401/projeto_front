@@ -1,0 +1,437 @@
+/* ===== MAIN CONTAINER ===== */
+.main {
+  min-height: 100vh;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(139, 0, 0, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, 
+      rgba(5, 5, 5, 1) 0%, 
+      rgba(12, 12, 12, 0.98) 25%,
+      rgba(8, 8, 8, 0.99) 75%,
+      rgba(5, 5, 5, 1) 100%
+    );
+  position: relative;
+  overflow: hidden;
+  padding: 80px 2rem 4rem;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 3px,
+      rgba(139, 0, 0, 0.02) 3px,
+      rgba(139, 0, 0, 0.02) 6px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(220, 38, 38, 0.015) 3px,
+      rgba(220, 38, 38, 0.015) 6px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ===== PAGE TITLE - INTERNATIONAL LEVEL ===== */
+.pageTitle {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 4rem 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(220, 38, 38, 0.4);
+}
+
+.pageTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: #dc2626;
+  border-radius: 1px;
+}
+
+/* ===== FIGHTERS GRID ===== */
+
+/* ===== FIGHTERS GRID ===== */
+.fightersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== FIGHTER CARD ===== */
+.fighterCard {
+  background: linear-gradient(145deg,
+    rgba(20, 20, 20, 0.9) 0%,
+    rgba(30, 30, 30, 0.85) 25%,
+    rgba(15, 15, 15, 0.9) 75%,
+    rgba(10, 10, 10, 0.95) 100%
+  );
+  backdrop-filter: blur(20px) saturate(130%);
+  -webkit-backdrop-filter: blur(20px) saturate(130%);
+  border-radius: 25px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.8),
+    0 15px 30px rgba(220, 38, 38, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(220, 38, 38, 0.1);
+  padding: 2.5rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.fighterCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 0.1) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(139, 0, 0, 0.08) 100%
+  );
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.fighterCard::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg,
+    rgba(220, 38, 38, 0.6),
+    rgba(139, 0, 0, 0.4),
+    rgba(255, 69, 0, 0.5),
+    rgba(220, 38, 38, 0.6)
+  );
+  border-radius: 25px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.fighterCard:hover {
+  transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 
+    0 40px 80px rgba(0, 0, 0, 0.9),
+    0 25px 50px rgba(220, 38, 38, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(220, 38, 38, 0.2);
+}
+
+.fighterCard:hover::before {
+  opacity: 1;
+}
+
+.fighterCard:hover::after {
+  opacity: 1;
+}
+
+/* ===== FIGHTER IMAGE ===== */
+.fighterCard img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  border: 3px solid rgba(220, 38, 38, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.fighterCard:hover img {
+  border-color: rgba(220, 38, 38, 0.6);
+  box-shadow: 
+    0 15px 40px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(220, 38, 38, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: scale(1.02);
+}
+
+/* ===== FIGHTER NAME ===== */
+.fighterName {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  background: linear-gradient(135deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.9) 30%,
+    rgba(220, 38, 38, 0.9) 70%,
+    rgba(139, 0, 0, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.fighterCard:hover .fighterName {
+  text-shadow: 0 0 20px rgba(220, 38, 38, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ===== FIGHTER INFO ===== */
+.fighterInfo {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.8rem 0;
+  padding: 0.8rem 1.2rem;
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(220, 38, 38, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.fighterInfo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg,
+    rgba(220, 38, 38, 0.8),
+    rgba(255, 69, 0, 0.6),
+    rgba(220, 38, 38, 0.8)
+  );
+  border-radius: 0 3px 3px 0;
+}
+
+.fighterCard:hover .fighterInfo {
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(220, 38, 38, 0.15) 50%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  border-color: rgba(220, 38, 38, 0.4);
+  color: rgba(255, 255, 255, 0.95);
+  transform: translateX(5px);
+}
+
+/* ===== BUTTON STYLING ===== */
+.fighterCard .ant-btn {
+  width: 100%;
+  height: 50px;
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 0.9) 0%,
+    rgba(139, 0, 0, 0.8) 50%,
+    rgba(75, 0, 130, 0.7) 100%
+  );
+  border: 2px solid rgba(220, 38, 38, 0.5);
+  border-radius: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.fighterCard .ant-btn:hover {
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 1) 0%,
+    rgba(139, 0, 0, 0.9) 50%,
+    rgba(75, 0, 130, 0.8) 100%
+  );
+  border-color: rgba(220, 38, 38, 0.8);
+  box-shadow: 
+    0 12px 35px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(220, 38, 38, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  color: #ffffff;
+}
+
+.fighterCard .ant-btn .anticon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+  .fightersGrid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+  }
+  
+  .pageTitle {
+    font-size: 3rem;
+    letter-spacing: 1.8px;
+    margin-bottom: 3.5rem;
+  }
+  
+  .fighterCard {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 70px 1rem 3rem;
+  }
+  
+  .fightersGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .pageTitle {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .fighterCard {
+    padding: 1.5rem;
+  }
+  
+  .fighterCard img {
+    height: 240px;
+  }
+  
+  .fighterName {
+    font-size: 1.5rem;
+  }
+  
+  .fighterInfo {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 60px 0.5rem 2rem;
+  }
+  
+  .fightersGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .pageTitle {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .fighterCard {
+    padding: 1.2rem;
+  }
+  
+  .fighterCard img {
+    height: 200px;
+  }
+  
+  .fighterName {
+    font-size: 1.3rem;
+  }
+  
+  .fighterInfo {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+    margin: 0.6rem 0;
+  }
+  
+  .fighterCard .ant-btn {
+    height: 45px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== LOADING ANIMATION ===== */
+@keyframes cardFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.fighterCard:nth-child(odd) {
+  animation: cardFloat 6s ease-in-out infinite;
+}
+
+.fighterCard:nth-child(even) {
+  animation: cardFloat 6s ease-in-out infinite reverse;
+  animation-delay: 1s;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fighterCard {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fighterCard:nth-child(1) { animation-delay: 0.1s; }
+.fighterCard:nth-child(2) { animation-delay: 0.2s; }
+.fighterCard:nth-child(3) { animation-delay: 0.3s; }
+.fighterCard:nth-child(4) { animation-delay: 0.4s; }
+.fighterCard:nth-child(5) { animation-delay: 0.5s; }
+.fighterCard:nth-child(6) { animation-delay: 0.6s; }
