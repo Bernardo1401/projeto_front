@@ -4,7 +4,7 @@ import { Button } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./page.module.css"
+import styles from "./lutador.module.css"
 import Header from "../../components/Header";
 import { useEffect, useState } from "react";
 
@@ -39,7 +39,7 @@ export default function FightersPage() {
                             <p className={styles.fighterInfo}>Alcance: {lutador.alcance_cm}</p>
                             <p className={styles.fighterInfo}>Categoria: {lutador.categoria_peso}</p>
                             <Link href={`/lutadores/${lutador.id}`}>
-                                <Button icon={<UserOutlined />}>Ver Perfil</Button>
+                                <Button icon={<UserOutlined />} href={`/lutadores/${lutador.id}`}>Ver Perfil</Button>
                             </Link>
                         </div>
                     ))}

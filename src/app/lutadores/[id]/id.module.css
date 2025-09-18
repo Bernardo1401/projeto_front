@@ -1,0 +1,368 @@
+/* ===== MAIN LAYOUT ===== */
+.main {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/images/silva_noc.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===== LOADING & ERROR STATES ===== */
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.error {
+  color: #ff4444;
+}
+
+/* ===== BACK BUTTON ===== */
+.backButton {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.backBtn {
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 0.95) 0%,
+    rgba(139, 0, 0, 0.9) 50%,
+    rgba(220, 38, 38, 0.95) 100%
+  ) !important;
+  border: 2px solid rgba(220, 38, 38, 0.6) !important;
+  border-radius: 15px !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  padding: 0 25px !important;
+  height: 50px !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.backBtn:hover {
+  background: linear-gradient(135deg,
+    rgba(255, 69, 0, 0.95) 0%,
+    rgba(220, 38, 38, 0.9) 50%,
+    rgba(255, 69, 0, 0.95) 100%
+  ) !important;
+  border-color: rgba(255, 69, 0, 0.8) !important;
+  box-shadow: 
+    0 12px 35px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(255, 69, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-3px) scale(1.02) !important;
+  color: #ffffff !important;
+}
+
+/* ===== FIGHTER PROFILE ===== */
+.fighterProfile {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ===== FIGHTER IMAGE ===== */
+.fighterImageContainer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(220, 38, 38, 0.3);
+  background: linear-gradient(45deg, rgba(220, 38, 38, 0.1), rgba(0, 0, 0, 0.3));
+}
+
+.fighterImage {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.fighterImageContainer:hover .fighterImage {
+  transform: scale(1.05);
+}
+
+.hallOfFameBadge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ===== FIGHTER INFO ===== */
+.fighterInfo {
+  color: #ffffff;
+}
+
+.fighterName {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #ffffff, #dc2626);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.1;
+}
+
+.fighterDetails {
+  margin-bottom: 3rem;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.detailItem:hover {
+  background: rgba(220, 38, 38, 0.1);
+  padding-left: 1rem;
+  border-radius: 10px;
+}
+
+.label {
+  font-weight: 600;
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+.value {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+/* ===== RECORD SECTION ===== */
+.record {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.2), rgba(139, 0, 0, 0.3));
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.recordTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.recordStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.recordItem {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.recordItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
+  background: rgba(220, 38, 38, 0.1);
+}
+
+.recordNumber {
+  display: block;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #dc2626;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recordLabel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== BIOGRAPHY SECTION ===== */
+.biography {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.biographyTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.biographyText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e5e5e5;
+  text-align: justify;
+}
+
+/* ===== ACHIEVEMENTS SECTION ===== */
+.achievements {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(220, 38, 38, 0.1));
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.achievementsTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.achievementsTitle::before {
+  content: '🏆';
+  font-size: 1.5rem;
+}
+
+.achievementsText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e5e5e5;
+  text-align: justify;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+  .fighterProfile {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .fighterName {
+    font-size: 2.8rem;
+  }
+  
+  .recordStats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .fighterProfile {
+    padding: 2rem;
+  }
+  
+  .fighterName {
+    font-size: 2.2rem;
+  }
+  
+  .fighterImage {
+    height: 400px;
+  }
+  
+  .recordStats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .detailItem {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 1rem 0;
+  }
+  
+  .fighterProfile {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+  
+  .fighterName {
+    font-size: 1.8rem;
+  }
+  
+  .recordNumber {
+    font-size: 2rem;
+  }
+}
