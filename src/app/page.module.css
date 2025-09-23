@@ -45,13 +45,62 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1600px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 7rem 3rem 4rem;
   gap: 4rem;
   min-height: 70vh;
   position: relative;
   z-index: 2;
+}
+
+/* Responsive adjustments for hero section */
+@media (min-width: 1600px) {
+  .heroSection {
+    max-width: 2000px;
+    padding: 8rem 4rem 5rem;
+    gap: 5rem;
+  }
+  
+  .imageContainer {
+    max-width: 800px;
+  }
+  
+  .title {
+    font-size: 5rem;
+  }
+  
+  .description {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .heroSection {
+    max-width: 2400px;
+    padding: 10rem 5rem 6rem;
+    gap: 6rem;
+  }
+  
+  .imageContainer {
+    max-width: 900px;
+  }
+  
+  .title {
+    font-size: 5.5rem;
+  }
+  
+  .description {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 .heroSection::before {
@@ -169,9 +218,9 @@
 }
 
 .title {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: 900;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   background: linear-gradient(135deg, 
     #ffffff 0%, 
     rgba(255, 255, 255, 0.95) 20%,
@@ -190,55 +239,55 @@
 }
 
 @keyframes titleGlow {
-  from { filter: drop-shadow(0 0 20px rgba(220, 20, 60, 0.3)); }
-  to { filter: drop-shadow(0 0 40px rgba(220, 20, 60, 0.6)); }
+  from { filter: drop-shadow(0 0 25px rgba(220, 20, 60, 0.4)); }
+  to { filter: drop-shadow(0 0 50px rgba(220, 20, 60, 0.7)); }
 }
 
 .title::after {
   content: '';
   position: absolute;
-  bottom: -15px;
+  bottom: -20px;
   left: 0;
-  width: 120px;
-  height: 4px;
+  width: 150px;
+  height: 5px;
   background: linear-gradient(90deg, 
     rgba(139, 0, 0, 1) 0%, 
     rgba(220, 20, 60, 1) 50%,
     rgba(255, 69, 0, 0.8) 100%
   );
-  border-radius: 2px;
-  box-shadow: 0 0 20px rgba(220, 20, 60, 0.5);
+  border-radius: 3px;
+  box-shadow: 0 0 25px rgba(220, 20, 60, 0.6);
 }
 
 .description {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
   line-height: 1.4;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
-  margin-bottom: 3rem;
-  padding: 2.5rem;
+  margin-bottom: 3.5rem;
+  padding: 3rem;
   background: linear-gradient(145deg, 
     rgba(139, 0, 0, 0.15) 0%, 
     rgba(20, 20, 20, 0.8) 50%,
     rgba(139, 0, 0, 0.1) 100%
   );
-  border-left: 4px solid rgba(220, 20, 60, 0.8);
-  border-radius: 0 16px 16px 0;
+  border-left: 5px solid rgba(220, 20, 60, 0.8);
+  border-radius: 0 20px 20px 0;
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 12px 35px rgba(0, 0, 0, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
@@ -298,10 +347,10 @@
 }
 
 .sectionTitle {
-  font-size: 4rem;
+  font-size: 4.8rem;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   background: linear-gradient(135deg, 
     #ffffff 0%, 
     rgba(255, 255, 255, 0.95) 20%,
@@ -319,18 +368,18 @@
 }
 
 @keyframes sectionTitleGlow {
-  from { filter: drop-shadow(0 0 30px rgba(220, 20, 60, 0.4)); }
-  to { filter: drop-shadow(0 0 50px rgba(220, 20, 60, 0.7)); }
+  from { filter: drop-shadow(0 0 35px rgba(220, 20, 60, 0.5)); }
+  to { filter: drop-shadow(0 0 60px rgba(220, 20, 60, 0.8)); }
 }
 
 .sectionTitle::before {
   content: '';
   position: absolute;
-  top: -20px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
-  height: 4px;
+  width: 250px;
+  height: 5px;
   background: linear-gradient(90deg, 
     transparent 0%,
     rgba(139, 0, 0, 0.8) 20%,
@@ -338,25 +387,25 @@
     rgba(139, 0, 0, 0.8) 80%,
     transparent 100%
   );
-  border-radius: 2px;
-  box-shadow: 0 0 20px rgba(220, 20, 60, 0.6);
+  border-radius: 3px;
+  box-shadow: 0 0 25px rgba(220, 20, 60, 0.7);
 }
 
 .sectionTitle::after {
   content: '';
   position: absolute;
-  bottom: -20px;
+  bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 4px;
+  width: 150px;
+  height: 5px;
   background: linear-gradient(90deg, 
     rgba(139, 0, 0, 1) 0%, 
     rgba(220, 20, 60, 1) 50%,
     rgba(139, 0, 0, 1) 100%
   );
-  border-radius: 2px;
-  box-shadow: 0 0 25px rgba(220, 20, 60, 0.5);
+  border-radius: 3px;
+  box-shadow: 0 0 30px rgba(220, 20, 60, 0.6);
 }
 
 /* ===== CAROUSEL STYLES ===== */
@@ -405,7 +454,7 @@
     rgba(25, 25, 25, 0.85) 70%,
     rgba(139, 0, 0, 0.1) 100%
   );
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 2px solid rgba(139, 0, 0, 0.3);
@@ -416,8 +465,8 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.1),
     inset 0 -1px 0 rgba(139, 0, 0, 0.2);
   cursor: pointer;
-  width: 520px;
-  height: 520px;
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -461,7 +510,7 @@
 .cardImageContainer {
   position: relative;
   overflow: hidden;
-  height: 360px;
+  height: 420px;
   flex-shrink: 0;
 }
 
@@ -549,28 +598,28 @@
 }
 
 .fighterName {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: #ffffff;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   text-shadow: 
     0 2px 4px rgba(0, 0, 0, 0.8),
     0 0 20px rgba(220, 20, 60, 0.3);
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
 .fighterCategory {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: rgba(220, 20, 60, 0.95);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-  padding: 8px 16px;
+  padding: 10px 18px;
   background: rgba(139, 0, 0, 0.2);
-  border-radius: 20px;
+  border-radius: 25px;
   border: 1px solid rgba(220, 20, 60, 0.3);
   backdrop-filter: blur(5px);
   display: inline-block;
@@ -1174,4 +1223,109 @@
 
 .heroImage {
   will-change: transform, filter;
+}
+
+/* ===== LARGE SCREEN RESPONSIVENESS ===== */
+@media (min-width: 1600px) {
+  .heroSection {
+    max-width: 2000px;
+    padding: 9rem 4rem 5rem;
+    gap: 5rem;
+    margin-top: 120px;
+  }
+  
+  .container {
+    max-width: 2000px;
+    padding: 0 3rem;
+  }
+  
+  .sectionTitle {
+    font-size: 4.5rem;
+  }
+  
+  .fighterCard {
+    width: 580px;
+    height: 580px;
+  }
+  
+  .cardImageContainer {
+    height: 400px;
+  }
+  
+  .fighterName {
+    font-size: 1.7rem;
+  }
+  
+  .fighterCategory {
+    font-size: 1rem;
+  }
+  
+  .carouselContainer {
+    max-width: 98%;
+    padding: 0 60px;
+  }
+  
+  .slide {
+    gap: 50px;
+    padding: 50px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .heroSection {
+    max-width: 2400px;
+    padding: 11rem 5rem 6rem;
+    gap: 6rem;
+    margin-top: 140px;
+  }
+  
+  .container {
+    max-width: 2400px;
+    padding: 0 4rem;
+  }
+  
+  .sectionTitle {
+    font-size: 5rem;
+  }
+  
+  .fighterCard {
+    width: 640px;
+    height: 640px;
+  }
+  
+  .cardImageContainer {
+    height: 440px;
+  }
+  
+  .fighterName {
+    font-size: 1.8rem;
+  }
+  
+  .fighterCategory {
+    font-size: 1.1rem;
+  }
+  
+  .carouselContainer {
+    max-width: 100%;
+    padding: 0 80px;
+  }
+  
+  .slide {
+    gap: 60px;
+    padding: 60px;
+  }
+  
+  .carouselBtn {
+    width: 75px;
+    height: 75px;
+    font-size: 2.2rem;
+  }
+  
+  .prevBtn {
+    left: 20px;
+  }
+  
+  .nextBtn {
+    right: 20px;
+  }
 }

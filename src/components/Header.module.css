@@ -270,6 +270,72 @@
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+
+/* ===== LARGE SCREEN OPTIMIZATIONS ===== */
+@media (min-width: 1600px) {
+  .container {
+    height: 120px;
+  }
+  
+  .header {
+    padding: 0 5rem;
+  }
+  
+  .logo {
+    gap: 20px;
+  }
+  
+  .logoImage {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .logoText {
+    font-size: 36px;
+  }
+  
+  .navList {
+    gap: 3.5rem;
+  }
+  
+  .navList li a {
+    padding: 16px 28px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    height: 140px;
+  }
+  
+  .header {
+    padding: 0 6rem;
+  }
+  
+  .logo {
+    gap: 25px;
+  }
+  
+  .logoImage {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logoText {
+    font-size: 42px;
+  }
+  
+  .navList {
+    gap: 4rem;
+  }
+  
+  .navList li a {
+    padding: 18px 32px;
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 0 3rem;
