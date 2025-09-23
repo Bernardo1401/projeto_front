@@ -21,7 +21,7 @@ export default function Header() {
             <li><a href="/">Home</a></li>
             <li><a href="/lutadores">Lutadores</a></li>
             <li><a href="/sobre">Sobre-mim</a></li>
-            <li><a href="#rankings">Rankings</a></li>
+            <li><a href="/contato">Contato</a></li>
           </ul>
         </nav>
       </header>

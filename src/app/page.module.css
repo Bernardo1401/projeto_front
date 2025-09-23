@@ -63,19 +63,19 @@
   }
   
   .imageContainer {
-    max-width: 800px;
+    max-width: 1100px; /* Aumentado de 950px */
   }
   
   .title {
-    font-size: 5rem;
+    font-size: 5rem; /* Reduzido de 6rem */
   }
   
   .description {
-    font-size: 2rem;
+    font-size: 2.2rem; /* Reduzido de 2.5rem */
   }
   
   .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* Reduzido de 1.8rem */
   }
 }
 
@@ -87,19 +87,19 @@
   }
   
   .imageContainer {
-    max-width: 900px;
+    max-width: 1200px; /* Aumentado de 1050px */
   }
   
   .title {
-    font-size: 5.5rem;
+    font-size: 5.5rem; /* Reduzido de 6.5rem */
   }
   
   .description {
-    font-size: 2.2rem;
+    font-size: 2.4rem; /* Reduzido de 2.8rem */
   }
   
   .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Reduzido de 2rem */
   }
 }
 
@@ -118,8 +118,8 @@
 }
 
 .imageContainer {
-  flex: 1.2;
-  max-width: 700px;
+  flex: 1.4; /* Aumentado de 1.2 */
+  max-width: 1000px; /* Aumentado de 850px */
   position: relative;
   z-index: 3;
 }
@@ -218,7 +218,7 @@
 }
 
 .title {
-  font-size: 5.5rem;
+  font-size: 4.5rem !important; /* Reduzido de 8rem */
   font-weight: 900;
   margin-bottom: 2.5rem;
   background: linear-gradient(135deg, 
@@ -260,7 +260,7 @@
 }
 
 .description {
-  font-size: 2.2rem;
+  font-size: 2rem !important; /* Reduzido de 3.2rem */
   font-weight: 600;
   margin-bottom: 2.5rem;
   color: rgba(255, 255, 255, 0.95);
@@ -270,7 +270,7 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.4rem !important; /* Reduzido de 2.2rem */
   font-weight: 400;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
@@ -598,7 +598,7 @@
 }
 
 .fighterName {
-  font-size: 1.8rem;
+  font-size: 1.2rem !important; /* Aumentado para 1.2rem */
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 15px;
@@ -611,7 +611,7 @@
 }
 
 .fighterCategory {
-  font-size: 1.1rem;
+  font-size: 0.85rem !important; /* Aumentado para 0.85rem */
   color: rgba(220, 20, 60, 0.95);
   font-weight: 600;
   text-transform: uppercase;
@@ -639,15 +639,15 @@
   }
   
   .title {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Reduzido de 3.5rem */
   }
   
   .description {
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Reduzido de 1.6rem */
   }
   
   .subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem; /* Reduzido de 1.3rem */
     padding: 1rem;
   }
   
@@ -663,15 +663,15 @@
   }
   
   .title {
-    font-size: 2rem;
+    font-size: 2.4rem; /* Reduzido de 2.8rem */
   }
   
   .description {
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Reduzido de 1.4rem */
   }
   
   .subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem; /* Reduzido de 1.2rem */
   }
   
   .imageContainer {

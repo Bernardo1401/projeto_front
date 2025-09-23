@@ -133,44 +133,47 @@ export default function AboutPage() {
                                     <div className={styles.skillsInTimeline}>
                                         <h5 className={styles.skillsTimelineTitle}>Principais Tecnologias:</h5>
                                         <div className={styles.skillsTimelineGrid}>
+                                            {/* Primeira linha - 3 cards */}
                                             <div className={styles.skillTimelineItem}>
                                                 <div className={styles.skillIcon} style={{backgroundColor: '#f7df1e', color: '#000'}}>
-                                                    <SiJavascript size={32} />
+                                                    <SiJavascript size={48} />
                                                 </div>
                                                 <span>JavaScript</span>
                                                 <div className={`${styles.skillLevel} ${styles.advanced}`}>Avançado</div>
                                             </div>
                                             <div className={styles.skillTimelineItem}>
                                                 <div className={styles.skillIcon} style={{backgroundColor: '#3178c6', color: '#fff'}}>
-                                                    <SiTypescript size={32} />
+                                                    <SiTypescript size={48} />
                                                 </div>
                                                 <span>TypeScript</span>
                                                 <div className={`${styles.skillLevel} ${styles.intermediate}`}>Intermediário</div>
                                             </div>
                                             <div className={styles.skillTimelineItem}>
                                                 <div className={styles.skillIcon} style={{backgroundColor: '#61dafb', color: '#000'}}>
-                                                    <SiReact size={32} />
+                                                    <SiReact size={48} />
                                                 </div>
                                                 <span>React</span>
                                                 <div className={`${styles.skillLevel} ${styles.advanced}`}>Avançado</div>
                                             </div>
+                                            
+                                            {/* Segunda linha - 3 cards */}
                                             <div className={styles.skillTimelineItem}>
                                                 <div className={styles.skillIcon} style={{backgroundColor: '#000', color: '#fff'}}>
-                                                    <SiNextdotjs size={32} />
+                                                    <SiNextdotjs size={48} />
                                                 </div>
                                                 <span>Next.js</span>
                                                 <div className={`${styles.skillLevel} ${styles.advanced}`}>Avançado</div>
                                             </div>
                                             <div className={styles.skillTimelineItem}>
                                                 <div className={styles.skillIcon} style={{backgroundColor: '#339933', color: '#fff'}}>
-                                                    <SiNodedotjs size={32} />
+                                                    <SiNodedotjs size={48} />
                                                 </div>
                                                 <span>Node.js</span>
                                                 <div className={`${styles.skillLevel} ${styles.intermediate}`}>Intermediário</div>
                                             </div>
                                             <div className={styles.skillTimelineItem}>
                                                 <div className={styles.skillIcon} style={{backgroundColor: '#336791', color: '#fff'}}>
-                                                    <SiPostgresql size={32} />
+                                                    <SiPostgresql size={48} />
                                                 </div>
                                                 <span>PostgreSQL</span>
                                                 <div className={`${styles.skillLevel} ${styles.intermediate}`}>Intermediário</div>

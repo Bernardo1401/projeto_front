@@ -52,7 +52,7 @@
 
 /* ===== PAGE TITLE - INTERNATIONAL LEVEL ===== */
 .pageTitle {
-  font-size: 3.5rem;
+  font-size: 4.5rem !important; /* Aumentado significativamente */
   font-weight: 600;
   text-align: center;
   margin: 0 0 4rem 0;
