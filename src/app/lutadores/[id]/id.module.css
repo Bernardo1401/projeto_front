@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   min-height: 60vh;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #ffffff;
   text-align: center;
 }
@@ -45,7 +45,7 @@
   border-radius: 15px !important;
   color: #ffffff !important;
   font-weight: 700 !important;
-  font-size: 1rem !important;
+  font-size: 0.85rem !important;
   padding: 0 25px !important;
   height: 50px !important;
   backdrop-filter: blur(10px) !important;
@@ -102,7 +102,7 @@
 
 .fighterImage {
   width: 100%;
-  height: 600px;
+  height: 500px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -117,13 +117,13 @@
   right: 20px;
   background: linear-gradient(135deg, #ffd700, #ffed4e);
   color: #000;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 8px 16px;
+  border-radius: 20px;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
   animation: pulse 2s infinite;
 }
@@ -139,7 +139,7 @@
 }
 
 .fighterName {
-  font-size: 3.5rem;
+  font-size: 3.5rem !important;
   font-weight: 900;
   margin-bottom: 2rem;
   background: linear-gradient(135deg, #ffffff, #dc2626);
@@ -172,13 +172,13 @@
 .label {
   font-weight: 600;
   color: #cccccc;
-  font-size: 1.1rem;
+  font-size: 0.95rem !important;
 }
 
 .value {
   font-weight: 700;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1rem !important;
   text-align: right;
 }
 
@@ -196,7 +196,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.8rem;
+  font-size: 1.4rem !important;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 1.5rem;
@@ -227,7 +227,7 @@
 
 .recordNumber {
   display: block;
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 900;
   color: #dc2626;
   margin-bottom: 0.5rem;
@@ -235,7 +235,7 @@
 }
 
 .recordLabel {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #cccccc;
   text-transform: uppercase;
@@ -252,7 +252,7 @@
 }
 
 .biographyTitle {
-  font-size: 1.8rem;
+  font-size: 1.4rem !important;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 1.5rem;
@@ -261,7 +261,7 @@
 }
 
 .biographyText {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   line-height: 1.8;
   color: #e5e5e5;
   text-align: justify;
@@ -278,7 +278,7 @@
 }
 
 .achievementsTitle {
-  font-size: 1.8rem;
+  font-size: 1.4rem !important;
   font-weight: 700;
   color: #ffd700;
   margin-bottom: 1.5rem;
@@ -295,7 +295,7 @@
 }
 
 .achievementsText {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   line-height: 1.8;
   color: #e5e5e5;
   text-align: justify;
@@ -310,7 +310,7 @@
   }
   
   .fighterName {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   
   .recordStats {
@@ -329,7 +329,7 @@
   }
   
   .fighterName {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
   
   .fighterImage {
@@ -359,10 +359,10 @@
   }
   
   .fighterName {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   
   .recordNumber {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }

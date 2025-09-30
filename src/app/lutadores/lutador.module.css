@@ -52,10 +52,10 @@
 
 /* ===== PAGE TITLE - INTERNATIONAL LEVEL ===== */
 .pageTitle {
-  font-size: 4.5rem !important; /* Aumentado significativamente */
+  font-size: 2.8rem !important;
   font-weight: 600;
   text-align: center;
-  margin: 0 0 4rem 0;
+  margin: 0 0 3rem 0;
   color: #ffffff;
   position: relative;
   z-index: 2;
@@ -77,6 +77,280 @@
   height: 2px;
   background: #dc2626;
   border-radius: 1px;
+}
+
+/* ===== SEARCH BAR SECTION ===== */
+.searchContainer {
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.searchWrapper {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(145deg,
+    rgba(20, 20, 20, 0.95) 0%,
+    rgba(30, 30, 30, 0.9) 25%,
+    rgba(25, 25, 25, 0.92) 75%,
+    rgba(15, 15, 15, 0.98) 100%
+  );
+  backdrop-filter: blur(20px) saturate(130%);
+  border-radius: 20px;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.searchInputWrapper {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100% !important;
+  height: 50px !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: 2px solid rgba(220, 38, 38, 0.3) !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  padding: 0 15px !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.searchInput:hover {
+  border-color: rgba(220, 38, 38, 0.5) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.searchInput:focus {
+  border-color: rgba(220, 38, 38, 0.8) !important;
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.searchInput input {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+.searchInput input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.searchIcon {
+  color: rgba(220, 38, 38, 0.8) !important;
+  font-size: 1.2rem !important;
+}
+
+.selectWrapper {
+  min-width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.categorySelect {
+  width: 100% !important;
+  height: 50px !important;
+}
+
+.categorySelect .ant-select-selector {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: 2px solid rgba(220, 38, 38, 0.3) !important;
+  border-radius: 12px !important;
+  height: 50px !important;
+  padding: 0 15px !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+  color: #ffffff !important;
+}
+
+.categorySelect .ant-select-selector:hover {
+  border-color: rgba(220, 38, 38, 0.5) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.categorySelect.ant-select-focused .ant-select-selector,
+.categorySelect .ant-select-selector:focus {
+  border-color: rgba(220, 38, 38, 0.8) !important;
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.categorySelect .ant-select-selection-placeholder,
+.categorySelect .ant-select-selection-item {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  line-height: 46px !important;
+  font-size: 1rem !important;
+}
+
+.categorySelect .ant-select-arrow {
+  color: rgba(220, 38, 38, 0.8) !important;
+  font-size: 14px !important;
+}
+
+.clearButton {
+  height: 50px !important;
+  min-width: 130px !important;
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 0.9) 0%,
+    rgba(139, 0, 0, 0.95) 100%
+  ) !important;
+  border: 2px solid rgba(220, 38, 38, 0.7) !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  padding: 0 24px !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  box-shadow: 
+    0 4px 15px rgba(220, 38, 38, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.clearButton:hover,
+.clearButton:focus {
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 1) 0%,
+    rgba(139, 0, 0, 1) 100%
+  ) !important;
+  border-color: rgba(220, 38, 38, 0.9) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 
+    0 8px 25px rgba(220, 38, 38, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+
+.clearButton:active {
+  transform: translateY(0px) scale(0.98) !important;
+  box-shadow: 
+    0 2px 10px rgba(220, 38, 38, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.clearButton span {
+  color: #ffffff !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.clearButton .anticon {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  transition: transform 0.3s ease !important;
+}
+
+.clearButton:hover .anticon {
+  transform: rotate(90deg) scale(1.1) !important;
+}
+
+/* Força override para o botão Limpar */
+.searchWrapper .clearButton,
+.searchWrapper .clearButton.ant-btn {
+  all: unset !important;
+  height: 50px !important;
+  min-width: 130px !important;
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 0.9) 0%,
+    rgba(139, 0, 0, 0.95) 100%
+  ) !important;
+  border: 2px solid rgba(220, 38, 38, 0.7) !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  padding: 0 24px !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  box-shadow: 
+    0 4px 15px rgba(220, 38, 38, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+}
+
+.searchWrapper .clearButton:hover,
+.searchWrapper .clearButton.ant-btn:hover {
+  background: linear-gradient(135deg,
+    rgba(220, 38, 38, 1) 0%,
+    rgba(139, 0, 0, 1) 100%
+  ) !important;
+  border-color: rgba(220, 38, 38, 0.9) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 
+    0 8px 25px rgba(220, 38, 38, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+
+/* Remove containers internos do botão */
+.clearButton .ant-btn-content,
+.clearButton span,
+.searchWrapper .clearButton .ant-btn-content,
+.searchWrapper .clearButton span {
+  display: contents !important;
+}
+
+.clearButton .anticon,
+.searchWrapper .clearButton .anticon {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  transition: transform 0.3s ease !important;
+  margin: 0 !important;
+  display: inline-flex !important;
+}
+
+.clearButton:hover .anticon,
+.searchWrapper .clearButton:hover .anticon {
+  transform: rotate(90deg) scale(1.1) !important;
+}
+
+.resultsCounter {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 /* ===== FIGHTERS GRID ===== */
@@ -147,7 +421,7 @@
   background: linear-gradient(45deg,
     rgba(220, 38, 38, 0.6),
     rgba(139, 0, 0, 0.4),
-    rgba(255, 69, 0, 0.5),
+    rgba(220, 38, 38, 0.5),
     rgba(220, 38, 38, 0.6)
   );
   border-radius: 25px;
@@ -199,7 +473,7 @@
 
 /* ===== FIGHTER NAME ===== */
 .fighterName {
-  font-size: 1.8rem;
+  font-size: 1.5rem !important;
   font-weight: 800;
   margin: 0 0 1rem 0;
   color: #ffffff;
@@ -222,7 +496,7 @@
 /* ===== FIGHTER INFO ===== */
 .fighterInfo {
   color: rgba(255, 255, 255, 0.85);
-  font-size: 1rem;
+  font-size: 0.8rem !important;
   font-weight: 500;
   margin: 0.8rem 0;
   padding: 0.8rem 1.2rem;
@@ -248,7 +522,7 @@
   width: 3px;
   background: linear-gradient(180deg,
     rgba(220, 38, 38, 0.8),
-    rgba(255, 69, 0, 0.6),
+    rgba(139, 0, 0, 0.6),
     rgba(220, 38, 38, 0.8)
   );
   border-radius: 0 3px 3px 0;
@@ -269,7 +543,7 @@
 .customButton {
   all: unset !important;
   width: 100% !important;
-  height: 55px !important;
+  height: 45px !important;
   margin-top: 1.5rem !important;
   background: linear-gradient(135deg,
     rgba(220, 38, 38, 0.95) 0%,
@@ -280,7 +554,7 @@
   border-radius: 15px !important;
   color: #ffffff !important;
   font-weight: 700 !important;
-  font-size: 1.1rem !important;
+  font-size: 0.7rem !important;
   backdrop-filter: blur(10px) !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   box-shadow: 
@@ -301,14 +575,14 @@
 
 .customButton:hover {
   background: linear-gradient(135deg,
-    rgba(255, 69, 0, 0.95) 0%,
-    rgba(220, 38, 38, 0.9) 50%,
-    rgba(255, 69, 0, 0.95) 100%
+    rgba(220, 38, 38, 1) 0%,
+    rgba(139, 0, 0, 0.95) 50%,
+    rgba(220, 38, 38, 1) 100%
   ) !important;
-  border-color: rgba(255, 69, 0, 0.8) !important;
+  border-color: rgba(220, 38, 38, 0.9) !important;
   box-shadow: 
     0 12px 35px rgba(0, 0, 0, 0.7),
-    0 0 30px rgba(255, 69, 0, 0.5),
+    0 0 30px rgba(220, 38, 38, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
   transform: translateY(-3px) scale(1.02) !important;
 }
@@ -317,7 +591,7 @@
 .fighterCard .ant-btn {
   all: unset !important;
   width: 100% !important;
-  height: 55px !important;
+  height: 45px !important;
   margin-top: 1.5rem !important;
   background: linear-gradient(135deg,
     rgba(220, 38, 38, 0.95) 0%,
@@ -328,7 +602,7 @@
   border-radius: 15px !important;
   color: #ffffff !important;
   font-weight: 700 !important;
-  font-size: 1.1rem !important;
+  font-size: 0.7rem !important;
   font-family: inherit !important;
   backdrop-filter: blur(10px) !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -350,14 +624,14 @@
 
 .fighterCard .ant-btn:hover {
   background: linear-gradient(135deg,
-    rgba(255, 69, 0, 0.95) 0%,
-    rgba(220, 38, 38, 0.9) 50%,
-    rgba(255, 69, 0, 0.95) 100%
+    rgba(220, 38, 38, 1) 0%,
+    rgba(139, 0, 0, 0.95) 50%,
+    rgba(220, 38, 38, 1) 100%
   ) !important;
-  border-color: rgba(255, 69, 0, 0.8) !important;
+  border-color: rgba(220, 38, 38, 0.9) !important;
   box-shadow: 
     0 12px 35px rgba(0, 0, 0, 0.7),
-    0 0 30px rgba(255, 69, 0, 0.5),
+    0 0 30px rgba(220, 38, 38, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
   transform: translateY(-3px) scale(1.02) !important;
   color: #ffffff !important;
@@ -384,7 +658,11 @@
 
 /* ===== GLOBAL BUTTON OVERRIDE ===== */
 .main button,
-.main .ant-btn {
+.main .ant-btn,
+.fightersGrid .fighterCard button,
+.fightersGrid .fighterCard .ant-btn,
+.main button span,
+.main .ant-btn span {
   background: linear-gradient(135deg, rgba(220, 38, 38, 0.95) 0%, rgba(139, 0, 0, 0.9) 50%, rgba(220, 38, 38, 0.95) 100%) !important;
   border: 2px solid rgba(220, 38, 38, 0.6) !important;
   color: #ffffff !important;
@@ -392,7 +670,8 @@
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
   border-radius: 15px !important;
-  height: 55px !important;
+  height: 45px !important;
+  font-size: 0.65rem !important;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -411,7 +690,7 @@
   }
   
   .pageTitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 5rem;
   }
   
@@ -424,17 +703,17 @@
   }
   
   .fighterName {
-    font-size: 2rem;
+    font-size: 1.7rem !important;
   }
   
   .fighterInfo {
-    font-size: 1.1rem;
+    font-size: 0.95rem !important;
     padding: 1rem 1.5rem;
   }
   
   .fighterCard .ant-btn {
-    height: 60px !important;
-    font-size: 1.2rem !important;
+    height: 40px !important;
+    font-size: 0.5rem !important;
   }
 }
 
@@ -451,7 +730,7 @@
   }
   
   .pageTitle {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     margin-bottom: 6rem;
   }
   
@@ -464,17 +743,17 @@
   }
   
   .fighterName {
-    font-size: 2.2rem;
+    font-size: 1.8rem !important;
   }
   
   .fighterInfo {
-    font-size: 1.2rem;
+    font-size: 1rem !important;
     padding: 1.2rem 1.8rem;
   }
   
   .fighterCard .ant-btn {
-    height: 65px !important;
-    font-size: 1.3rem !important;
+    height: 42px !important;
+    font-size: 0.55rem !important;
   }
 }
 
@@ -493,6 +772,23 @@
   
   .fighterCard {
     padding: 2rem;
+  }
+  
+  .searchContainer {
+    padding: 0 1.5rem;
+  }
+  
+  .searchWrapper {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .searchInputWrapper {
+    min-width: 250px;
+  }
+  
+  .selectWrapper {
+    min-width: 180px;
   }
 }
 
@@ -522,12 +818,33 @@
   }
   
   .fighterName {
-    font-size: 1.5rem;
+    font-size: 1.6rem !important;
   }
   
   .fighterInfo {
-    font-size: 0.9rem;
+    font-size: 0.85rem !important;
     padding: 0.6rem 1rem;
+  }
+  
+  .searchContainer {
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .searchWrapper {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .searchInputWrapper,
+  .selectWrapper {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .clearButton {
+    width: 100%;
   }
 }
 
@@ -557,18 +874,37 @@
   }
   
   .fighterName {
-    font-size: 1.3rem;
+    font-size: 1.5rem !important;
   }
   
   .fighterInfo {
-    font-size: 0.85rem;
+    font-size: 0.8rem !important;
     padding: 0.5rem 0.8rem;
     margin: 0.6rem 0;
   }
   
   .fighterCard .ant-btn {
-    height: 45px;
-    font-size: 0.9rem;
+    height: 35px !important;
+    font-size: 0.5rem !important;
+  }
+  
+  .searchContainer {
+    padding: 0 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .searchWrapper {
+    padding: 1rem;
+  }
+  
+  .searchInput,
+  .categorySelect .ant-select-selector,
+  .clearButton {
+    height: 45px !important;
+  }
+  
+  .searchInput {
+    font-size: 0.9rem !important;
   }
 }
 
@@ -613,3 +949,56 @@
 .fighterCard:nth-child(4) { animation-delay: 0.4s; }
 .fighterCard:nth-child(5) { animation-delay: 0.5s; }
 .fighterCard:nth-child(6) { animation-delay: 0.6s; }
+
+/* ===== FORÇA DIMINUIÇÃO BOTÃO ===== */
+.main .fightersGrid .fighterCard button,
+.main .fightersGrid .fighterCard .ant-btn,
+.main .fightersGrid .fighterCard .customButton,
+.fightersGrid .fighterCard button,
+.fightersGrid .fighterCard .ant-btn,
+.fightersGrid .fighterCard .customButton {
+  font-size: 0.5rem !important;
+}
+
+.main .fightersGrid .fighterCard button span,
+.main .fightersGrid .fighterCard .ant-btn span,
+.main .fightersGrid .fighterCard .customButton span,
+.fightersGrid .fighterCard button span,
+.fightersGrid .fighterCard .ant-btn span,
+.fightersGrid .fighterCard .customButton span {
+  font-size: 0.5rem !important;
+}
+
+/* ===== FORÇA TOTAL BOTÃO ===== */
+.fighterCard button[class*="ant-btn"],
+.fighterCard .ant-btn[class*="ant"],
+button.ant-btn,
+.ant-btn {
+  font-size: 0.45rem !important;
+}
+
+.fighterCard button[class*="ant-btn"] span,
+.fighterCard .ant-btn[class*="ant"] span,
+button.ant-btn span,
+.ant-btn span {
+  font-size: 0.45rem !important;
+}
+
+/* ===== SOBRESCREVER GLOBALS.CSS ===== */
+.main .ant-btn,
+.main button.ant-btn,
+.fightersGrid .ant-btn,
+.fightersGrid button.ant-btn,
+.fighterCard .ant-btn,
+.fighterCard button.ant-btn {
+  font-size: 0.4rem !important;
+}
+
+.main .ant-btn span,
+.main button.ant-btn span,
+.fightersGrid .ant-btn span,
+.fightersGrid button.ant-btn span,
+.fighterCard .ant-btn span,
+.fighterCard button.ant-btn span {
+  font-size: 0.4rem !important;
+}

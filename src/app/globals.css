@@ -4,16 +4,24 @@
   box-sizing: border-box;
 }
 
-/* Aumentar tamanhos de fontes globalmente */
-html {
-  font-size: 20px; /* Aumentado de 16px padrão */
-}
-
+/* Remove overflow horizontal para evitar barras laterais */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  overflow-x: hidden !important; /* Remove barra lateral */
+  max-width: 100vw !important;
+}
+
+/* Força todos os elementos a não excederem o viewport */
+* {
+  max-width: 100vw !important;
+}
+
+/* Aumentar tamanhos de fontes globalmente */
+html {
+  font-size: 20px; /* Aumentado de 16px padrão */
 }
 
 /* Body styling for black background */
@@ -76,6 +84,31 @@ li {
   padding: 0.8rem 2rem !important;
 }
 
+/* Exceção para cards de lutadores */
+.main .ant-btn,
+.fightersGrid .ant-btn,
+.fighterCard .ant-btn {
+  font-size: 0.7rem !important;
+  min-height: 45px !important;
+  height: 45px !important;
+  padding: 0.6rem 1.4rem !important;
+}
+
+/* Força específica para lutadores */
+[class*="lutador"] .ant-btn,
+div[class*="main"] div[class*="fightersGrid"] .ant-btn,
+div[class*="fighterCard"] .ant-btn {
+  font-size: 0.65rem !important;
+  min-height: 42px !important;
+  height: 42px !important;
+  padding: 0.5rem 1.2rem !important;
+}
+
+div[class*="main"] div[class*="fightersGrid"] .ant-btn span,
+div[class*="fighterCard"] .ant-btn span {
+  font-size: 0.65rem !important;
+}
+
 .ant-card-meta-title { 
   font-size: 1.6rem !important; 
 }
@@ -105,4 +138,105 @@ li {
 /* Textos pequenos também aumentados */
 small, .small {
   font-size: 1rem !important;
+}
+
+/* ===== CORES DE TECNOLOGIA - FORÇA MÁXIMA ===== */
+.skillIcon.javascript,
+[class*="skillIcon"][class*="javascript"] {
+  background: linear-gradient(135deg, #f7df1e, #f0d91d) !important;
+  color: #000000 !important;
+  border-color: rgba(247, 223, 30, 0.5) !important;
+}
+
+.skillIcon.typescript,
+[class*="skillIcon"][class*="typescript"] {
+  background: linear-gradient(135deg, #3178c6, #2d6bb4) !important;
+  color: #ffffff !important;
+  border-color: rgba(49, 120, 198, 0.5) !important;
+}
+
+.skillIcon.react,
+[class*="skillIcon"][class*="react"] {
+  background: linear-gradient(135deg, #61dafb, #21a9c7) !important;
+  color: #000000 !important;
+  border-color: rgba(97, 218, 251, 0.5) !important;
+}
+
+.skillIcon.nextjs,
+[class*="skillIcon"][class*="nextjs"] {
+  background: linear-gradient(135deg, #000000, #1a1a1a) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.skillIcon.nodejs,
+[class*="skillIcon"][class*="nodejs"] {
+  background: linear-gradient(135deg, #339933, #2d7a2d) !important;
+  color: #ffffff !important;
+  border-color: rgba(51, 153, 51, 0.5) !important;
+}
+
+.skillIcon.postgresql,
+[class*="skillIcon"][class*="postgresql"] {
+  background: linear-gradient(135deg, #336791, #254b6b) !important;
+  color: #ffffff !important;
+  border-color: rgba(51, 103, 145, 0.5) !important;
+}
+
+/* Estilos para o dropdown do Select da busca */
+.ant-select-dropdown {
+  background: rgba(20, 20, 20, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(220, 38, 38, 0.3) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) !important;
+}
+
+.ant-select-item {
+  background: transparent !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+  padding: 12px 16px !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+
+.ant-select-item:hover {
+  background: rgba(220, 38, 38, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.ant-select-item-option-selected {
+  background: rgba(220, 38, 38, 0.3) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.ant-select-item-option-selected:hover {
+  background: rgba(220, 38, 38, 0.4) !important;
+}
+
+/* Força estilos para o Select específico da busca */
+.categorySelect.ant-select-open .ant-select-selector {
+  border-color: rgba(220, 38, 38, 0.8) !important;
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3) !important;
+}
+
+/* Remove o outline azul padrão */
+.categorySelect .ant-select-selector:focus,
+.categorySelect .ant-select-selector:focus-within {
+  outline: none !important;
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3) !important;
+}
+
+/* Força a cor de fundo escura em todos os estados */
+.categorySelect .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border: 2px solid rgba(220, 38, 38, 0.3) !important;
+}
+
+.categorySelect .ant-select-single:not(.ant-select-customize-input).ant-select-focused .ant-select-selector,
+.categorySelect .ant-select-single:not(.ant-select-customize-input).ant-select-open .ant-select-selector {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  border-color: rgba(220, 38, 38, 0.8) !important;
 }

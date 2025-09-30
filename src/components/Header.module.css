@@ -5,7 +5,7 @@
   right: 0;
   z-index: 1000;
   padding: 0;
-  height: 90px;
+  height: 110px;
 }
 
 .header {
@@ -142,7 +142,7 @@
 }
 
 .logoText {
-  font-size: 32px; /* Aumentado de 28px */
+  font-size: 26px;
   font-weight: 900;
   background: linear-gradient(
     45deg,
@@ -193,7 +193,7 @@
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px; /* Aumentado de 16px */
+  font-size: 18px !important;
   position: relative;
   padding: 12px 20px;
   border-radius: 8px;

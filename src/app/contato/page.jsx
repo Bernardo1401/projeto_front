@@ -56,7 +56,7 @@ export default function ContatoPage() {
         {
             icon: <MailOutlined />,
             title: "Email Comercial",
-            value: "contato@bernardodev.com",
+            value: "bernardo.marques@aluno.senai.br",
             subtitle: "Resposta em até 24h"
         },
         {
@@ -68,7 +68,7 @@ export default function ContatoPage() {
         {
             icon: <EnvironmentOutlined />,
             title: "Localização",
-            value: "São Paulo, SP",
+            value: "Valinhos, SP",
             subtitle: "Atendimento presencial"
         }
     ];

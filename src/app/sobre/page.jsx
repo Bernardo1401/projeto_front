@@ -97,17 +97,9 @@ export default function AboutPage() {
                                         icon={<MailOutlined />} 
                                         size="large" 
                                         className={styles.socialBtn}
-                                        href="mailto:bernardomarques@email.com"
+                                        href="mailto:bernardo.marques@aluno.senai.br"
                                     >
                                         Email
-                                    </Button>
-                                    <Button 
-                                        icon={<DownloadOutlined />} 
-                                        size="large" 
-                                        className={styles.cvBtn}
-                                        href="#"
-                                    >
-                                        Download CV
                                     </Button>
                                 </div>
                             </div>
@@ -135,52 +127,116 @@ export default function AboutPage() {
                                         <div className={styles.skillsTimelineGrid}>
                                             {/* Primeira linha - 3 cards */}
                                             <div className={styles.skillTimelineItem}>
-                                                <div className={styles.skillIcon} style={{backgroundColor: '#f7df1e', color: '#000'}}>
+                                                <div className={`${styles.skillIcon} ${styles.javascript}`}>
                                                     <SiJavascript size={48} />
                                                 </div>
-                                                <span>JavaScript</span>
+                                                <span className={styles.techNameJavascript}>JavaScript</span>
                                                 <div className={`${styles.skillLevel} ${styles.advanced}`}>Avançado</div>
                                             </div>
                                             <div className={styles.skillTimelineItem}>
-                                                <div className={styles.skillIcon} style={{backgroundColor: '#3178c6', color: '#fff'}}>
+                                                <div className={`${styles.skillIcon} ${styles.typescript}`}>
                                                     <SiTypescript size={48} />
                                                 </div>
-                                                <span>TypeScript</span>
+                                                <span className={styles.techNameTypescript}>TypeScript</span>
                                                 <div className={`${styles.skillLevel} ${styles.intermediate}`}>Intermediário</div>
                                             </div>
                                             <div className={styles.skillTimelineItem}>
-                                                <div className={styles.skillIcon} style={{backgroundColor: '#61dafb', color: '#000'}}>
+                                                <div className={`${styles.skillIcon} ${styles.react}`}>
                                                     <SiReact size={48} />
                                                 </div>
-                                                <span>React</span>
+                                                <span className={styles.techNameReact}>React</span>
                                                 <div className={`${styles.skillLevel} ${styles.advanced}`}>Avançado</div>
                                             </div>
                                             
                                             {/* Segunda linha - 3 cards */}
                                             <div className={styles.skillTimelineItem}>
-                                                <div className={styles.skillIcon} style={{backgroundColor: '#000', color: '#fff'}}>
-                                                    <SiNextdotjs size={48} />
+                                                <div className={`${styles.skillIcon} ${styles.nextjs}`}>
+                                                    <SiNextdotjs size={60} />
                                                 </div>
-                                                <span>Next.js</span>
+                                                <span className={styles.techNameNextjs}>Next.js</span>
                                                 <div className={`${styles.skillLevel} ${styles.advanced}`}>Avançado</div>
                                             </div>
                                             <div className={styles.skillTimelineItem}>
-                                                <div className={styles.skillIcon} style={{backgroundColor: '#339933', color: '#fff'}}>
-                                                    <SiNodedotjs size={48} />
+                                                <div className={`${styles.skillIcon} ${styles.nodejs}`}>
+                                                    <SiNodedotjs size={60} />
                                                 </div>
-                                                <span>Node.js</span>
+                                                <span className={styles.techNameNodejs}>Node.js</span>
                                                 <div className={`${styles.skillLevel} ${styles.intermediate}`}>Intermediário</div>
                                             </div>
                                             <div className={styles.skillTimelineItem}>
-                                                <div className={styles.skillIcon} style={{backgroundColor: '#336791', color: '#fff'}}>
-                                                    <SiPostgresql size={48} />
+                                                <div className={`${styles.skillIcon} ${styles.postgresql}`}>
+                                                    <SiPostgresql size={60} />
                                                 </div>
-                                                <span>PostgreSQL</span>
+                                                <span className={styles.techNamePostgresql}>PostgreSQL</span>
                                                 <div className={`${styles.skillLevel} ${styles.intermediate}`}>Intermediário</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Motivation Section */}
+                    <section className={styles.motivationSection}>
+                        <h2 className={styles.sectionTitle}>
+                            <RocketOutlined /> Motivações do Projeto
+                        </h2>
+                        <div className={styles.motivationContent}>
+                            <div className={styles.motivationCard}>
+                                <div className={styles.motivationHeader}>
+                                    <div className={styles.motivationIcon}>
+                                        <TrophyOutlined />
+                                    </div>
+                                    <h3 className={styles.motivationTitle}>Paixão pelo UFC</h3>
+                                </div>
+                                <p className={styles.motivationText}>
+                                    Como fã das artes marciais mistas, sempre quis criar uma plataforma que celebrasse 
+                                    os lutadores e tornasse as informações do UFC mais acessíveis. Este projeto nasceu 
+                                    da necessidade de ter estatísticas detalhadas e históricos completos em um só lugar.
+                                </p>
+                            </div>
+                            
+                            <div className={styles.motivationCard}>
+                                <div className={styles.motivationHeader}>
+                                    <div className={styles.motivationIcon}>
+                                        <FaCode />
+                                    </div>
+                                    <h3 className={styles.motivationTitle}>Desafio Técnico</h3>
+                                </div>
+                                <p className={styles.motivationText}>
+                                    Desenvolver uma aplicação completa com funcionalidades avançadas como busca, 
+                                    filtros e páginas dinâmicas foi uma oportunidade perfeita para demonstrar minhas 
+                                    habilidades em React, Next.js e desenvolvimento full stack.
+                                </p>
+                            </div>
+                            
+                            <div className={styles.motivationCard}>
+                                <div className={styles.motivationHeader}>
+                                    <div className={styles.motivationIcon}>
+                                        <MailOutlined />
+                                    </div>
+                                    <h3 className={styles.motivationTitle}>Comunidade</h3>
+                                </div>
+                                <p className={styles.motivationText}>
+                                    Quero criar um espaço onde outros fãs possam explorar informações detalhadas 
+                                    sobre seus lutadores favoritos, descobrir novos talentos e se conectar através 
+                                    da paixão compartilhada pelas artes marciais mistas.
+                                </p>
+                            </div>
+                            
+                            <div className={styles.motivationCard}>
+                                <div className={styles.motivationHeader}>
+                                    <div className={styles.motivationIcon}>
+                                        <RocketOutlined />
+                                    </div>
+                                    <h3 className={styles.motivationTitle}>Inovação & UX</h3>
+                                </div>
+                                <p className={styles.motivationText}>
+                                    Busco sempre implementar as melhores práticas de experiência do usuário, 
+                                    criando interfaces intuitivas e responsivas. Este projeto representa minha 
+                                    visão de como a tecnologia pode melhorar a forma como consumimos esportes.
+                                </p>
                             </div>
                         </div>
                     </section>
@@ -197,7 +253,10 @@ export default function AboutPage() {
                                     <p className={styles.projectDescription}>{project.description}</p>
                                     <div className={styles.projectTech}>
                                         {project.tech.map((tech, techIndex) => (
-                                            <span key={techIndex} className={styles.techTag}>
+                                            <span 
+                                                key={techIndex} 
+                                                className={`${styles.techTag} ${styles['techTag' + tech.replace(/[^a-zA-Z]/g, '')]}`}
+                                            >
                                                 {tech}
                                             </span>
                                         ))}

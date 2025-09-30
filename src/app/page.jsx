@@ -100,7 +100,15 @@ export default function Home() {
                                                             className={styles.fighterImage}
                                                         />
                                                         <div className={styles.cardOverlay}>
-                                                            <span className={styles.viewMore}>Ver Mais</span>
+                                                            <Link href={`/lutadores/${lutador.id}`}>
+                                                                <Button 
+                                                                    type="primary"
+                                                                    icon={<UserOutlined />}
+                                                                    className={styles.viewMore}
+                                                                >
+                                                                    Ver Mais
+                                                                </Button>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                     <div className={styles.cardContent}>
