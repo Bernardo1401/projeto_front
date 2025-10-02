@@ -23,7 +23,6 @@
   max-width: 1200px !important; /* Reduzido de 1400px para evitar overflow */
   margin: 0 auto;
   padding: 0 1.5rem !important; /* Reduzido de 2rem */
-  overflow-x: hidden !important; /* Evita scroll horizontal */
   width: calc(100% - 3rem) !important; /* Garante que não exceda viewport considerando padding */
   box-sizing: border-box !important;
 }
