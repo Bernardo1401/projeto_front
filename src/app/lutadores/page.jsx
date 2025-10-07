@@ -64,7 +64,6 @@ export default function FightersPage() {
             <main className={styles.main}>
                 <h1 className={styles.pageTitle}>Lista do maiores lutadores</h1>
                 
-                {/* Barra de Busca */}
                 <div className={styles.searchContainer}>
                     <div className={styles.searchWrapper}>
                         <div className={styles.searchInputWrapper}>

@@ -51,7 +51,6 @@ export default function AboutPage() {
             <Header />
             <main className={styles.main}>
                 <div className={styles.container}>
-                    {/* Hero Section */}
                     <section className={styles.heroSection}>
                         <div className={styles.heroContent}>
                             <div className={styles.profileImageContainer}>
@@ -105,7 +104,6 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </section>
-                    {/* Experience Section */}
                     <section className={styles.experienceSection}>
                         <h2 className={styles.sectionTitle}>
                             <TrophyOutlined /> Experiência Profissional
@@ -125,7 +123,6 @@ export default function AboutPage() {
                                     <div className={styles.skillsInTimeline}>
                                         <h5 className={styles.skillsTimelineTitle}>Principais Tecnologias:</h5>
                                         <div className={styles.skillsTimelineGrid}>
-                                            {/* Primeira linha - 3 cards */}
                                             <div className={styles.skillTimelineItem}>
                                                 <div className={`${styles.skillIcon} ${styles.javascript}`}>
                                                     <SiJavascript size={48} />
@@ -148,7 +145,6 @@ export default function AboutPage() {
                                                 <div className={`${styles.skillLevel} ${styles.advanced}`}>Avançado</div>
                                             </div>
                                             
-                                            {/* Segunda linha - 3 cards */}
                                             <div className={styles.skillTimelineItem}>
                                                 <div className={`${styles.skillIcon} ${styles.nextjs}`}>
                                                     <SiNextdotjs size={60} />
@@ -177,7 +173,6 @@ export default function AboutPage() {
                         </div>
                     </section>
 
-                    {/* Motivation Section */}
                     <section className={styles.motivationSection}>
                         <h2 className={styles.sectionTitle}>
                             <RocketOutlined /> Motivações do Projeto
@@ -241,7 +236,6 @@ export default function AboutPage() {
                         </div>
                     </section>
 
-                    {/* Projects Section */}
                     <section className={styles.projectsSection}>
                         <h2 className={styles.sectionTitle}>
                             <FaCode /> Projetos em Destaque
@@ -271,7 +265,6 @@ export default function AboutPage() {
                         </div>
                     </section>
 
-                    {/* Contact Section */}
                     <section className={styles.contactSection}>
                         <h2 className={styles.sectionTitle}>
                             <MailOutlined /> Vamos Trabalhar Juntos?

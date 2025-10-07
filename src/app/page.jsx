@@ -65,7 +65,6 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-            {/* Carrossel de lutadores */}
             <section className={styles.fighterSection}>
                 <div className={styles.container}>
                     <h2 className={styles.sectionTitle}>Lutadores Brasileiros em Destaque</h2>
@@ -132,7 +131,6 @@ export default function Home() {
                         </button>
                     </div>
                     
-                    {/* Indicadores */}
                     {totalSlides > 1 && (
                         <div className={styles.indicators}>
                             {Array.from({ length: totalSlides }).map((_, index) => (

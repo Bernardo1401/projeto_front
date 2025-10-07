@@ -1,4 +1,3 @@
-/* ===== MAIN LAYOUT ===== */
 .main {
   min-height: 100vh;
   background: 
@@ -48,14 +47,13 @@
 }
 
 .container {
-  max-width: 100vw; /* Aumentado de 95vw para usar toda largura */
+  max-width: 100vw;
   margin: 0 auto;
-  padding: 4rem 2rem; /* Reduzido padding lateral */
+  padding: 4rem 2rem;
   position: relative;
   z-index: 2;
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
   text-align: center;
   margin-bottom: 4rem;
@@ -104,48 +102,46 @@
 .heroStats {
   display: flex;
   justify-content: center;
-  gap: 4rem; /* Aumentado de 3rem */
-  margin-top: 3rem; /* Aumentado de 2rem */
+  gap: 4rem;
+  margin-top: 3rem;
 }
 
 .stat {
   text-align: center;
-  padding: 2rem 1.5rem; /* Aumentado de 1rem */
+  padding: 2rem 1.5rem;
   background: rgba(220, 38, 38, 0.1);
-  border-radius: 16px; /* Aumentado de 12px */
+  border-radius: 16px;
   border: 1px solid rgba(220, 38, 38, 0.2);
   backdrop-filter: blur(10px);
-  min-width: 160px; /* Aumentado de 120px */
-  min-height: 140px; /* Adicionado */
+  min-width: 160px;
+  min-height: 140px;
 }
 
 .stat span:first-child {
   display: block;
-  font-size: 2.2rem !important; /* Reduzido de 2.8rem */
+  font-size: 2.2rem !important;
   font-weight: 800 !important;
   color: #dc2626 !important;
-  margin-bottom: 0.5rem; /* Aumentado de 0.25rem */
+  margin-bottom: 0.5rem;
 }
 
 .stat span:last-child {
-  font-size: 1rem !important; /* Aumentado de 0.875rem */
+  font-size: 1rem !important;
   color: rgba(255, 255, 255, 0.7) !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-weight: 600; /* Adicionado */
+  font-weight: 600;
 }
 
-/* ===== CONTENT GRID ===== */
 .contentGrid {
   display: grid;
-  grid-template-columns: 1.8fr 1fr; /* Aumentado de 1.3fr para 1.8fr */
-  gap: 6rem; /* Reduzido de 8rem para 6rem */
+  grid-template-columns: 1.8fr 1fr;
+  gap: 6rem;
   align-items: start;
-  width: 100%; /* Usa toda a largura disponível */
+  width: 100%;
   margin: 0 auto;
 }
 
-/* ===== SIDEBAR SECTION ===== */
 .sidebarSection {
   display: flex;
   flex-direction: column;
@@ -154,7 +150,6 @@
   top: 140px;
 }
 
-/* ===== FAQ CARD ===== */
 .faqCard {
   background: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(15px) !important;
@@ -216,7 +211,6 @@
   line-height: 1.5;
 }
 
-/* ===== SERVICES CARD ===== */
 .servicesCard {
   background: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(15px) !important;
@@ -299,7 +293,6 @@
   line-height: 1.4;
 }
 
-/* ===== NEWSLETTER CARD ===== */
 .newsletterCard {
   background: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(15px) !important;
@@ -376,7 +369,6 @@
   background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%) !important;
 }
 
-/* ===== FORM SECTION ===== */
 .formSection {
   position: relative;
 }
@@ -406,13 +398,13 @@
 }
 
 .formCard .ant-card-body {
-  padding: 4rem 5rem !important; /* Aumentado padding horizontal de 4rem para 5rem */
+  padding: 4rem 5rem !important;
 }
 
 .formHeader {
   text-align: center;
-  margin-bottom: 3rem; /* Aumentado de 2rem */
-  padding-bottom: 2rem; /* Aumentado de 1.5rem */
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid rgba(220, 38, 38, 0.2);
 }
 
@@ -430,16 +422,15 @@
   line-height: 1.8;
 }
 
-/* ===== FORM STYLING ===== */
 .contactForm .ant-form-item {
-  margin-bottom: 2rem !important; /* Aumentado de 1.5rem */
+  margin-bottom: 2rem !important;
 }
 
 .contactForm .ant-form-item-label > label {
   color: rgba(255, 255, 255, 0.9) !important;
   font-weight: 600 !important;
-  font-size: 1.3rem !important; /* Aumentado significativamente */
-  margin-bottom: 0.8rem !important; /* Aumentado de 0.5rem */
+  font-size: 1.3rem !important;
+  margin-bottom: 0.8rem !important;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -452,13 +443,13 @@
 .textarea {
   background: rgba(0, 0, 0, 0.4) !important;
   border: 2px solid rgba(220, 38, 38, 0.3) !important;
-  border-radius: 12px !important; /* Aumentado de 10px */
+  border-radius: 12px !important;
   color: white !important;
-  font-size: 1.3rem !important; /* Aumentado significativamente */
-  padding: 1.2rem 1.5rem !important; /* Aumentado de 0.875rem 1rem */
+  font-size: 1.3rem !important;
+  padding: 1.2rem 1.5rem !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   backdrop-filter: blur(10px) !important;
-  min-height: 60px !important; /* Adicionado */
+  min-height: 60px !important;
 }
 
 .input:hover,
@@ -490,25 +481,24 @@
 }
 
 .textarea {
-  min-height: 160px !important; /* Aumentado de 120px */
+  min-height: 160px !important;
   resize: vertical !important;
   font-family: inherit !important;
-  line-height: 1.8 !important; /* Aumentado de 1.6 */
+  line-height: 1.8 !important;
 }
 
-/* ===== SUBMIT BUTTON ===== */
 .submitContainer {
   margin-top: 2rem !important;
   margin-bottom: 0 !important;
 }
 
 .submitButton {
-  height: 70px !important; /* Aumentado de 60px */
+  height: 70px !important;
   background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%) !important;
   border: none !important;
-  border-radius: 35px !important; /* Aumentado de 30px */
+  border-radius: 35px !important;
   font-weight: 700 !important;
-  font-size: 1.3rem !important; /* Aumentado de 1.1rem */
+  font-size: 1.3rem !important;
   color: white !important;
   box-shadow: 
     0 8px 25px rgba(220, 38, 38, 0.4),
@@ -554,33 +544,31 @@
     0 4px 15px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* ===== INFO SECTION (LEGACY) ===== */
 .infoSection {
   display: flex;
   flex-direction: column;
-  gap: 3rem; /* Aumentado de 1.5rem para 3rem */
-  padding: 0 3rem; /* Aumentado de 2rem para 3rem */
+  gap: 3rem;
+  padding: 0 3rem;
 }
 
-/* ===== CONTACT CARDS ===== */
 .contactCards {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Reduzido de 3rem */
-  margin-bottom: 2rem; /* Reduzido de 3rem */
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .contactCard {
   background: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(15px) !important;
   border: 1px solid rgba(220, 38, 38, 0.3) !important;
-  border-radius: 16px !important; /* Reduzido de 20px */
+  border-radius: 16px !important;
   transition: all 0.3s ease !important;
   position: relative !important;
   overflow: hidden !important;
-  min-height: 120px; /* Reduzido de 200px */
-  min-width: 350px; /* Adicionado largura mínima */
-  width: 100%; /* Garante largura total disponível */
+  min-height: 120px;
+  min-width: 350px;
+  width: 100%;
 }
 
 .contactCard::before {
@@ -602,26 +590,26 @@
 }
 
 .contactCard .ant-card-body {
-  padding: 2rem 3rem !important; /* Mais padding horizontal */
+  padding: 2rem 3rem !important;
 }
 
 .cardContent {
   display: flex;
-  align-items: center; /* Volta para center */
-  gap: 2rem; /* Mantém gap bom */
-  min-height: 100px; /* Reduzido */
-  width: 100%; /* Garante largura total */
+  align-items: center;
+  gap: 2rem;
+  min-height: 100px;
+  width: 100%;
 }
 
 .cardIcon {
-  width: 70px; /* Reduzido */
-  height: 70px; /* Reduzido */
+  width: 70px;
+  height: 70px;
   background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-  border-radius: 18px; /* Reduzido */
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem; /* Reduzido */
+  font-size: 1.8rem;
   color: white;
   flex-shrink: 0;
   box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
@@ -632,44 +620,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 0; /* Permite quebra de texto se necessário */
+  min-width: 0;
 }
 
 .cardTitle {
-  font-size: 1rem !important; /* Reduzido de 1.4rem */
+  font-size: 1rem !important;
   color: #dc2626 !important;
-  margin-bottom: 0.3rem !important; /* Reduzido */
+  margin-bottom: 0.3rem !important;
   display: block;
-  font-weight: 600; /* Reduzido de 700 */
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px; /* Reduzido */
-  line-height: 1.1; /* Reduzido */
-  white-space: nowrap; /* Evita quebra de linha */
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 .cardValue {
-  font-size: 1rem !important; /* Reduzido de 1.3rem */
+  font-size: 1rem !important;
   color: white !important;
-  font-weight: 500 !important; /* Reduzido de 600 */
+  font-weight: 500 !important;
   display: block;
-  margin-bottom: 0.3rem !important; /* Reduzido */
-  line-height: 1.2; /* Reduzido */
-  white-space: nowrap; /* Evita quebra de linha */
-  overflow: hidden; /* Esconde overflow */
-  text-overflow: ellipsis; /* Adiciona ... se texto for muito longo */
+  margin-bottom: 0.3rem !important;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cardSubtitle {
-  font-size: 0.85rem !important; /* Reduzido de 1.1rem */
-  color: rgba(255, 255, 255, 0.7) !important; /* Reduzido opacidade */
+  font-size: 0.85rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
   text-transform: uppercase;
-  letter-spacing: 0.3px; /* Reduzido */
-  line-height: 1.2; /* Reduzido */
-  font-weight: 400; /* Reduzido de 500 */
-  white-space: nowrap; /* Evita quebra de linha */
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  font-weight: 400;
+  white-space: nowrap;
 }
 
-/* ===== SOCIAL CARD ===== */
 .socialCard {
   background: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(15px) !important;
@@ -691,7 +678,7 @@
 }
 
 .socialCard .ant-card-body {
-  padding: 2rem !important; /* Aumentado de 1.5rem para 2rem */
+  padding: 2rem !important;
 }
 
 .socialTitle {
@@ -734,7 +721,6 @@
   box-shadow: 0 4px 15px rgba(220, 38, 38, 0.2);
 }
 
-/* ===== AVAILABILITY CARD ===== */
 .availabilityCard {
   background: rgba(34, 197, 94, 0.1) !important;
   backdrop-filter: blur(15px) !important;
@@ -756,7 +742,7 @@
 }
 
 .availabilityCard .ant-card-body {
-  padding: 2rem !important; /* Aumentado de 1.25rem para 2rem */
+  padding: 2rem !important;
 }
 
 .availabilityContent {
@@ -783,9 +769,7 @@
   font-size: 0.85rem !important;
 }
 
-/* ===== ERROR STATES ===== */
 .contactForm .ant-form-item-explain-error {
-  color: #ff6b6b !important;
   font-size: 0.8rem !important;
   margin-top: 0.5rem !important;
   font-weight: 500 !important;
@@ -793,20 +777,19 @@
   letter-spacing: 0.5px;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .contentGrid {
     grid-template-columns: 1fr;
-    gap: 3rem; /* Reduzido para tablets */
+    gap: 3rem;
   }
   
   .container {
-    max-width: 95vw; /* Reduzido para tablets */
-    padding: 3rem 2rem; /* Ajustado padding */
+    max-width: 95vw;
+    padding: 3rem 2rem;
   }
   
   .formCard .ant-card-body {
-    padding: 3rem 4rem !important; /* Reduzido para tablets */
+    padding: 3rem 4rem !important;
   }
   
   .sidebarSection {
@@ -836,8 +819,8 @@
   }
   
   .container {
-    padding: 0 1.5rem 2rem; /* Aumentado de 1rem */
-    max-width: 100vw; /* Usa toda a largura no mobile */
+    padding: 0 1.5rem 2rem;
+    max-width: 100vw;
   }
   
   .hero {
@@ -845,11 +828,11 @@
   }
   
   .heroTitle {
-    font-size: 3.5rem !important; /* Aumentado de 2.5rem */
+    font-size: 3.5rem !important;
   }
   
   .heroSubtitle {
-    font-size: 1.4rem !important; /* Aumentado de 1.1rem */
+    font-size: 1.4rem !important;
   }
   
   .heroStats {
@@ -858,54 +841,54 @@
   }
   
   .formCard .ant-card-body {
-    padding: 2.5rem 3rem !important; /* Aumentado para mobile */
+    padding: 2.5rem 3rem !important;
   }
   
   .contactCards {
     grid-template-columns: 1fr;
-    gap: 1.5rem; /* Mantém gap reduzido no mobile */
+    gap: 1.5rem;
   }
   
   .contactCard {
-    min-width: unset; /* Remove largura mínima no mobile */
+    min-width: unset;
   }
   
   .contactCard .ant-card-body {
-    padding: 1.5rem 2rem !important; /* Ajustado para mobile */
+    padding: 1.5rem 2rem !important;
   }
   
   .cardContent {
-    gap: 1.5rem; /* Mantém gap no mobile */
-    min-height: 80px; /* Reduzido no mobile */
+    gap: 1.5rem;
+    min-height: 80px;
   }
   
   .cardIcon {
-    width: 60px; /* Reduzido no mobile */
+    width: 60px;
     height: 60px;
     font-size: 1.5rem;
   }
   
   .cardTitle {
-    font-size: 0.9rem !important; /* Ajustado para mobile */
-    white-space: normal; /* Permite quebra no mobile se necessário */
+    font-size: 0.9rem !important;
+    white-space: normal;
   }
   
   .cardValue {
-    font-size: 0.9rem !important; /* Ajustado para mobile */
-    white-space: normal; /* Permite quebra no mobile se necessário */
+    font-size: 0.9rem !important;
+    white-space: normal;
   }
   
   .cardSubtitle {
-    font-size: 0.8rem !important; /* Ajustado para mobile */
-    white-space: normal; /* Permite quebra no mobile se necessário */
+    font-size: 0.8rem !important;
+    white-space: normal;
   }
   
   .formTitle {
-    font-size: 2rem !important; /* Aumentado */
+    font-size: 2rem !important;
   }
   
   .formSubtitle {
-    font-size: 1.1rem !important; /* Aumentado */
+    font-size: 1.1rem !important;
   }
 }
 
@@ -933,7 +916,6 @@
   }
 }
 
-/* ===== LARGE SCREENS ===== */
 @media (min-width: 1600px) {
   .main {
     padding-top: 50px;

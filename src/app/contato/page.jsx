@@ -94,7 +94,6 @@ export default function ContatoPage() {
             <main className={styles.main}>
                 <div className={styles.container}>
                     
-                    {/* Hero Section */}
                     <div className={styles.hero}>
                         <div className={styles.heroContent}>
                             <Title level={1} className={styles.heroTitle}>
@@ -123,7 +122,6 @@ export default function ContatoPage() {
 
                     <div className={styles.contentGrid}>
                         
-                        {/* Contact Form */}
                         <div className={styles.formSection}>
                             <Card className={styles.formCard}>
                                 <div className={styles.formHeader}>
@@ -217,10 +215,8 @@ export default function ContatoPage() {
                             </Card>
                         </div>
 
-                        {/* Contact Info */}
                         <div className={styles.infoSection}>
                             
-                            {/* Contact Cards */}
                             <div className={styles.contactCards}>
                                 {contactInfo.map((info, index) => (
                                     <Card key={index} className={styles.contactCard}>
@@ -244,7 +240,6 @@ export default function ContatoPage() {
                                 ))}
                             </div>
 
-                            {/* Social Links */}
                             <Card className={styles.socialCard}>
                                 <Title level={4} className={styles.socialTitle}>
                                     Conecte-se Comigo
@@ -268,7 +263,6 @@ export default function ContatoPage() {
                                 </Space>
                             </Card>
 
-                            {/* Availability */}
                             <Card className={styles.availabilityCard}>
                                 <div className={styles.availabilityContent}>
                                     <ClockCircleOutlined className={styles.availabilityIcon} />
